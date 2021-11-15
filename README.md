@@ -1,2 +1,2 @@
 # Responsive-Design
-Test - applying responsive design on flexbox
+Test - applying responsive design on grid and flexbox
