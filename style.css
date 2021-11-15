@@ -1,0 +1,86 @@
+.section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 256px;
+  padding: 32px;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.responsive-grid div {
+  height: 100%;
+  width: 100%;
+}
+
+.responsive-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.responsive-flex div {
+  width: 100%;
+}
+
+/*I added*/
+/* Extra Small */
+@media only screen and (min-width: 324px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* Small */
+@media only screen and (min-width: 576px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* Medium */
+@media only screen and (min-width: 768px) {
+  /* Write Something Here*/
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+  .responsive-flex {
+    flex-wrap: nowrap;
+    }
+}
+
+/* Large */
+@media only screen and (min-width: 992px) {
+  /* Write Something Here*/
+  .responsive-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* Extra Large */
+@media only screen and (min-width: 1200px) {
+  /* Write Something Here*/
+  .responsive-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* Extra Extra Large */
+@media only screen and (min-width: 1400px) {
+  /* Write Something Here*/
+  .responsive-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
